@@ -1,15 +1,13 @@
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import teamBanner from "../../assets/img/teamBanner.png";
 import Bottom from "../home/Bottom";
 import InnerBanner from "../innerBanner";
 import Loader from "../layout/loader";
-import PageHeading from "../pageHeading";
-import Team from "./team";
-import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import teamBanner from "../../assets/img/teamBanner.png";
 import Options from "./filter";
+import Team from "./team";
 
 const TeamPage = () => {
   const [teamMember, setTeamMember] = useState(Team);

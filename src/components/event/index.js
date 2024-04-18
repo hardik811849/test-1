@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import InnerBanner from "../innerBanner";
 import event1 from "../../assets/img/event1.png";
-import event2 from "../../assets/img/event2.png";
-import event3 from "../../assets/img/event3.png";
-import event4 from "../../assets/img/event4.png";
+import InnerBanner from "../innerBanner";
 
 const Event = () => {
   const [listData, setListData] = useState([]),
@@ -80,7 +77,10 @@ const Event = () => {
               </div>
             </div>
             <p className="content">
-            Your Catalyst for a Greener Future! Discover innovative hydrogen solutions that drive sustainable energy transition and pave the way towards a cleaner, more resilient world. Join us in embracing the hydrogen revolution today!
+              Your Catalyst for a Greener Future! Discover innovative hydrogen
+              solutions that drive sustainable energy transition and pave the
+              way towards a cleaner, more resilient world. Join us in embracing
+              the hydrogen revolution today!
             </p>
           </div>
           <div className="col-md-6">

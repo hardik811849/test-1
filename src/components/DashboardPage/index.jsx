@@ -1,42 +1,32 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import Loader from '../layout/loader'
-import About from '../home/About'
-import BannerContatctUs from './BannerContactUs'
-import Bottom from '../home/Bottom'
-import Brief from '../home/Brief'
-import Info from '../home/Info'
-import Insights from '../home/Insights'
-import Numbers from '../home/Numbers'
-import Plants from '../home/Plants'
-import Team from '../home/Team'
-import Aos from 'aos'
-import card1 from '../../assets/img/homePageMiddleLeft.png'
-import card2 from '../../assets/img/Mask_Group.png'
-import rightimg from '../../assets/img/greenHydroImages/homePageTopRight.png'
-import ban from '../../assets/img/greenHydroImages/earth-core-structure.png'
-import acrossGlobe from '../../assets/img/greenHydroImages//homePageBottomleft.png'
+import Aos from "aos";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import acrossGlobe from "../../assets/img/greenHydroImages//homePageBottomleft.png";
+import ban from "../../assets/img/greenHydroImages/earth-core-structure.png";
+import rightimg from "../../assets/img/greenHydroImages/homePageTopRight.png";
+import Loader from "../layout/loader";
+import BannerContatctUs from "./BannerContactUs";
 
 const DashboardPage = ({ onLearnMore, onLets }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init();
+  }, []);
 
   const LearnMore = () => {
-    return navigate('home/about-us')
-  }
+    return navigate("home/about-us");
+  };
   const lets = () => {
-    return navigate('/home/contact/us')
-  }
+    return navigate("/home/contact/us");
+  };
 
   return (
     <>
       <Loader />
       <BannerContatctUs onLearnMore={LearnMore} onLets={lets} />
-      <div className='main-body'>
-        <div className='future-text-wrap'>
-          <div className='banner_head'>
+      <div className="main-body">
+        <div className="future-text-wrap">
+          <div className="banner_head">
             {/* <div className="row text-center banner_head_text">
               <div
                 data-aos-duration="700"
@@ -95,21 +85,21 @@ const DashboardPage = ({ onLearnMore, onLets }) => {
               </div>
             </div> */}
 
-            <div className='row gx-5 gy-5 future-statement'>
-              <div className='col-xl-6 col-sm-12 col-12 d-flex align-items-center'>
-                <div className='text_right'>
+            <div className="row gx-5 gy-5 future-statement">
+              <div className="col-xl-6 col-sm-12 col-12 d-flex align-items-center">
+                <div className="text_right">
                   <h5
-                    data-aos-duration='700'
-                    data-aos='fade-right'
-                    data-aos-delay='1000'
+                    data-aos-duration="700"
+                    data-aos="fade-right"
+                    data-aos-delay="1000"
                   >
                     Fueling a Sustainable Future with Hydrogen Energy Solutions.
                   </h5>
                   <p
-                    data-aos-duration='700'
-                    data-aos='fade-left'
-                    data-aos-delay='700'
-                    className='mt-2 mb-2'
+                    data-aos-duration="700"
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                    className="mt-2 mb-2"
                   >
                     At Hydrogen196, we are committed to driving a greener and
                     more sustainable future through the power of hydrogen. As a
@@ -121,28 +111,28 @@ const DashboardPage = ({ onLearnMore, onLets }) => {
                     propel us towards a cleaner and more resilient energy
                     landscape.
                   </p>
-                  <div className='home-text-box'>
+                  <div className="home-text-box">
                     <p>
                       At Hydrogen196, we fuel a sustainable future, harnessing
                       the power of hydrogen for a cleaner and greener world.
                     </p>
                   </div>
                   <br /> <br />
-                  <a onClick={() => navigate('about/')} className='learn-more'>
-                    {' '}
+                  <a onClick={() => navigate("about/")} className="learn-more">
+                    {" "}
                     Know more
                   </a>
                 </div>
               </div>
 
-              <div className='col-xl-6 col-sm-12 col-12'>
+              <div className="col-xl-6 col-sm-12 col-12">
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-up'
-                  data-aos-delay='1000'
+                  data-aos-duration="700"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
                 >
-                  <div className='d-flex justify-content-end'>
-                    <img src={rightimg} alt='' />
+                  <div className="d-flex justify-content-end">
+                    <img src={rightimg} alt="" />
                   </div>
                 </div>
               </div>
@@ -151,16 +141,16 @@ const DashboardPage = ({ onLearnMore, onLets }) => {
         </div>
         <div>
           <div
-            data-aos-duration='700'
-            data-aos='fade-up'
-            data-aos-delay='1000'
-            className='banner_head'
+            data-aos-duration="700"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            className="banner_head"
           >
-            <div className='row mt-5'>
-              <div className='col-12 relative'>
-                <img src={ban} alt='' className='banner-dashboard'></img>
-                <div className='developing-banner'>
-                  <h3 className='seperator-banner-text'>
+            <div className="row mt-5">
+              <div className="col-12 relative">
+                <img src={ban} alt="" className="banner-dashboard"></img>
+                <div className="developing-banner">
+                  <h3 className="seperator-banner-text">
                     Leading the Charge towards Sustainability: A Renewable
                     Energy & Power Pioneer.
                   </h3>
@@ -245,102 +235,102 @@ const DashboardPage = ({ onLearnMore, onLets }) => {
             </div>
           </div>
         </div>*/}
-        <div className='power-generation-info-wrap'>
-          <div className='box_content'>
-            <div className='row power-numbering'>
+        <div className="power-generation-info-wrap">
+          <div className="box_content">
+            <div className="row power-numbering">
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='600'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="600"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>100 GW</h1>
                   <p>by 2030</p>
                 </div>
 
-                <div className='title_3'>Global green hydrogen capacity</div>
+                <div className="title_3">Global green hydrogen capacity</div>
               </div>
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='500'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="500"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>$250 B</h1>
                   <p>by 2025</p>
                 </div>
-                <div className='title_3'>projected global hydrogen market</div>
+                <div className="title_3">projected global hydrogen market</div>
               </div>
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='400'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="400"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>15%</h1>
                   <p>increase in </p>
                 </div>
-                <div className='title_3'>efficient electrolysis​</div>
+                <div className="title_3">efficient electrolysis​</div>
               </div>
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='300'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="300"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>30%</h1>
                   <p>lower </p>
                 </div>
-                <div className='title_3'>carbon emissions</div>
+                <div className="title_3">carbon emissions</div>
               </div>
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='200'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>10,000</h1>
                   <p>fuel cell buses</p>
                 </div>
-                <div className='title_3'>planned for deployment by 2025</div>
+                <div className="title_3">planned for deployment by 2025</div>
               </div>
               <div
-                data-aos-duration='700'
-                data-aos='fade-down'
-                data-aos-delay='100'
-                className='col-2'
+                data-aos-duration="700"
+                data-aos="fade-down"
+                data-aos-delay="100"
+                className="col-2"
               >
-                <div className='sm_box'>
+                <div className="sm_box">
                   <h1>5 M</h1>
                   <p>metric tons</p>
                 </div>
-                <div className='title_3'>hydrogen production by 2030​</div>
+                <div className="title_3">hydrogen production by 2030​</div>
               </div>
             </div>
-            <div className='row gx-4 gy-5'>
+            <div className="row gx-4 gy-5">
               <div
-                data-aos-duration='700'
-                data-aos='fade-right'
-                className='col-xl-6 col-sm-12 col-12'
+                data-aos-duration="700"
+                data-aos="fade-right"
+                className="col-xl-6 col-sm-12 col-12"
               >
-                <div className=''>
+                <div className="">
                   <img
                     src={acrossGlobe}
-                    className='bottom-dashbord-img'
-                    alt=''
+                    className="bottom-dashbord-img"
+                    alt=""
                   ></img>
                 </div>
               </div>
-              <div className='col-xl-6 col-sm-12 col-12 d-flex align-items-center'>
+              <div className="col-xl-6 col-sm-12 col-12 d-flex align-items-center">
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-left'
-                  className='title_4 d-grid'
+                  data-aos-duration="700"
+                  data-aos="fade-left"
+                  className="title_4 d-grid"
                 >
                   <h3>Sustainable Partnerships for a Greater Impact.</h3>
                   <p>
@@ -360,7 +350,7 @@ const DashboardPage = ({ onLearnMore, onLets }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DashboardPage
+export default DashboardPage;

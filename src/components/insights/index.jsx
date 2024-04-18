@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import InnerBanner from "../innerBanner";
-import { Col, Row } from "react-bootstrap";
-import PageHeading from "../pageHeading";
-import rightBanner from "../../assets/img/imgOne.png";
-import leftBanner from "../../assets/img/imgTwo.png";
+import React, { useEffect, useState } from "react";
 import insightBanner from "../../assets/img/newsBanner.png";
-import { useEffect } from "react";
-import authService from "../services/authService";
 import { formatDate } from "../admin/dashboard/commonUtil";
+import InnerBanner from "../innerBanner";
+import authService from "../services/authService";
 
 const Insights = () => {
   const [blog, setBlog] = useState([]);

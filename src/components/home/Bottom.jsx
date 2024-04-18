@@ -1,8 +1,6 @@
-import React from 'react'
-import { Col, Row } from 'react-bootstrap'
-import BottomCard from '../bottomCard'
+import React from "react";
 
-const Bottom = ({className}) => {
+const Bottom = ({ className }) => {
   return (
     <section className={`bottom-section ${className}`}>
       {/* <Row className='gy-4'>
@@ -25,7 +23,7 @@ const Bottom = ({className}) => {
         </Col>
       </Row> */}
     </section>
-  )
-}
+  );
+};
 
-export default Bottom
+export default Bottom;

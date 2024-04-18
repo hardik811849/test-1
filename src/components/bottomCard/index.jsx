@@ -1,10 +1,10 @@
 import React from "react";
-import shape from '../../assets/img/card-shape.png'
+import shape from "../../assets/img/card-shape.png";
 
-const BottomCard = ({title, link=""}) => {
+const BottomCard = ({ title, link = "" }) => {
   return (
     <a href={link} className="bottom-card">
-        <img src={shape} alt="" className="card-shape" />
+      <img src={shape} alt="" className="card-shape" />
 
       <h6 className="card-text">{title}</h6>
 

@@ -1,25 +1,17 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import InnerBanner from "../innerBanner";
-import PageHeading from "../pageHeading";
-import PrimaryBgHeading from "../primaryBgHeading";
-import TechnologyBox from "../technologyBox";
-import t1 from "../../assets/img/drysteam.png";
-import t3 from "../../assets/img/binary.png";
-import Loader from "../layout/loader";
-import techBanner from "../../assets/img/techBanner.png";
-import rightBanner from "../../assets/img/advancingTopLeft.png";
-import leftBanner from "../../assets/img/MaskGroup.png";
-import sciBanner from "../../assets/img/Mask_Group.png";
+import logoNine from "../../assets/img/CYBERSECURITY.png";
+import logoSix from "../../assets/img/DEMOGRAPHICSANDENGAGEMENT.png";
+import logoFive from "../../assets/img/EFFICIENCY  UTILIZATION.png";
 import logoOne from "../../assets/img/EMISSIONSCO2AVOIDANCE.png";
-import logoTwo from "../../assets/img/SAFETY.png";
+import logoEight from "../../assets/img/GOVERNANCE.png";
+import logoSeven from "../../assets/img/LEAKDETECTION.png";
 import logoThree from "../../assets/img/POWER SOURCES.png";
 import logoFour from "../../assets/img/RECRUITMENT.png";
-import logoFive from "../../assets/img/EFFICIENCY  UTILIZATION.png";
-import logoSix from "../../assets/img/DEMOGRAPHICSANDENGAGEMENT.png";
-import logoSeven from "../../assets/img/LEAKDETECTION.png";
-import logoEight from "../../assets/img/GOVERNANCE.png";
-import logoNine from "../../assets/img/CYBERSECURITY.png";
+import logoTwo from "../../assets/img/SAFETY.png";
+import rightBanner from "../../assets/img/advancingTopLeft.png";
+import techBanner from "../../assets/img/techBanner.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
 
 const Advancing = () => {
   return (

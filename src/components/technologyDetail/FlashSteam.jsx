@@ -1,12 +1,12 @@
 import React from "react";
-import InnerBanner from "../innerBanner";
-import PageHeading from "../pageHeading";
-import img from "../../assets/img/flashplant.png";
 import { Col, Row } from "react-bootstrap";
-import DetailBottomBanner from "./DetailBottomBanner";
-import TechnologyBox from "../technologyBox";
+import img from "../../assets/img/flashplant.png";
 import Bottom from "../home/Bottom";
+import InnerBanner from "../innerBanner";
 import Loader from "../layout/loader";
+import PageHeading from "../pageHeading";
+import TechnologyBox from "../technologyBox";
+import DetailBottomBanner from "./DetailBottomBanner";
 
 const FlashSteam = () => {
   return (

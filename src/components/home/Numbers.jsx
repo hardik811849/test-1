@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
-import NumberCard from '../numberCard'
-import Aos from 'aos'
+import Aos from "aos";
+import React, { useEffect } from "react";
+import NumberCard from "../numberCard";
 
 const Numbers = () => {
   useEffect(() => {
     Aos.init();
-  }, [])
-  
+  }, []);
+
   return (
     <section className="number-section">
       <div data-aos-duration="500" data-aos="fade-right">
@@ -42,6 +42,6 @@ const Numbers = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Numbers
+export default Numbers;

@@ -1,20 +1,7 @@
 import React, { useEffect, useState } from "react";
-import InnerBanner from "../innerBanner";
-import { Col, Row } from "react-bootstrap";
-import PageHeading from "../pageHeading";
-import { useLocation } from "react-router-dom";
-import logo from "../../assets/img/greenHydroImages/logo.svg";
-import lctlogo from "../../assets/img/lct-logo.png";
-import tech196logo from "../../assets/img/tech196-logo.png";
-import remplogo from "../../assets/img/remp-logo.png";
-import gtlogo from "../../assets/img/gt-logo.png";
-import generationlogo from "../../assets/img/generation-logo.png";
-import telogo from "../../assets/img/te-logo.png";
-import eventdetail from "../../assets/img/eventdetail.png";
-import jaypatel from "../../assets/img/team/jayy.png";
-import contact1 from "../../assets/img/team/contact1.png";
-import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/img/greenHydroImages/logo.svg";
 
 const Event = () => {
   const search = useLocation().pathname;

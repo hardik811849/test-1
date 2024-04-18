@@ -1,38 +1,31 @@
-import React, { useEffect } from 'react'
-import { Col, Row } from 'react-bootstrap'
-import InnerBanner from '../innerBanner'
-import PageHeading from '../pageHeading'
-import PrimaryBgHeading from '../primaryBgHeading'
-import TechnologyBox from '../technologyBox'
-import t1 from '../../assets/img/drysteam.png'
-import t3 from '../../assets/img/binary.png'
-import Loader from '../layout/loader'
-import techBanner from '../../assets/img/orcBanner.png'
-import rightBanner from '../../assets/img/greenHydroImages/scicatBottomLeft.png'
-import leftBanner from '../../assets/img/MaskGroup.png'
-import sciBanner from '../../assets/img/Mask_Group.png'
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import sciBanner from "../../assets/img/Mask_Group.png";
+import rightBanner from "../../assets/img/greenHydroImages/scicatBottomLeft.png";
+import techBanner from "../../assets/img/orcBanner.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
 
 const Scicat = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
       <Loader />
       <InnerBanner
-        data-aos-duration='700'
-        data-aos='fade-up'
-        title='SCICAT® TECHNOLOGY'
+        data-aos-duration="700"
+        data-aos="fade-up"
+        title="SCICAT® TECHNOLOGY"
         image={techBanner}
       />
-      <div className='body_wrap'>
-        <div className='row'>
+      <div className="body_wrap">
+        <div className="row">
           {/* <div className='d-flex'> */}
-          <div className='col-xl-6 col-sm-12 col-12'>
-            <div className='detail_scicat_'>
+          <div className="col-xl-6 col-sm-12 col-12">
+            <div className="detail_scicat_">
               <h3>
                 Scicat represents proprietary and award-winning 3-d seismic
                 technology for enhanced geothermal systems and maximum
@@ -45,7 +38,7 @@ const Scicat = () => {
                 permeability of geothermal rock formations.
               </p>
             </div>
-            <div className='details_scicat_p'>
+            <div className="details_scicat_p">
               <p>
                 Changes in fractured rock define permeability and geothermal
                 reservoir extent, which drives reservoir performance and
@@ -55,38 +48,38 @@ const Scicat = () => {
             </div>
           </div>
           {/* <div className='col-1' /> */}
-          <div className='col-xl-6 col-sm-12 col-12'>
+          <div className="col-xl-6 col-sm-12 col-12">
             <div
-              data-aos-duration='700'
-              data-aos='fade-left'
-              data-aos-delay='1000'
-              className='img_right'
+              data-aos-duration="700"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              className="img_right"
             >
-              <img className='img-fluid' src={sciBanner} alt='' />
+              <img className="img-fluid" src={sciBanner} alt="" />
             </div>
           </div>
           {/* <div className='col-1' /> */}
           {/* </div> */}
-          <div className='bottom_section_orc'>
-            <div className='bottom_title_name'>
+          <div className="bottom_section_orc">
+            <div className="bottom_title_name">
               <h3>Other Technology</h3>
             </div>
-            <div className='row '>
-              <div className='col-xl-6 col-sm-12 col-12'>
+            <div className="row ">
+              <div className="col-xl-6 col-sm-12 col-12">
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-left'
-                  data-aos-delay='700'
+                  data-aos-duration="700"
+                  data-aos="fade-left"
+                  data-aos-delay="700"
                 >
-                  <img className='img-fluid' src={rightBanner} alt=''></img>
+                  <img className="img-fluid" src={rightBanner} alt=""></img>
                 </div>
               </div>
-              <div className='col-xl-6 col-sm-12 col-12'>
+              <div className="col-xl-6 col-sm-12 col-12">
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-right'
-                  data-aos-delay='700'
-                  className='title_bottom'
+                  data-aos-duration="700"
+                  data-aos="fade-right"
+                  data-aos-delay="700"
+                  className="title_bottom"
                 >
                   <h3>Organic Rankine Cycle (ORC) Plant</h3>
                   <p>
@@ -96,10 +89,10 @@ const Scicat = () => {
                     production and 98% uptime efficiency.
                   </p>
                   <span
-                    className='cursor-pointer'
-                    onClick={() => navigate('/technology/orc')}
+                    className="cursor-pointer"
+                    onClick={() => navigate("/technology/orc")}
                   >
-                    {' '}
+                    {" "}
                     Know More
                   </span>
                 </div>
@@ -109,7 +102,7 @@ const Scicat = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Scicat
+export default Scicat;

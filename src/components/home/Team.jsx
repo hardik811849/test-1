@@ -1,18 +1,16 @@
 import React from "react";
-import TeamCard from "../team";
+import Slider from "react-slick";
 import t1 from "../../assets/img/team/Andrew.png";
-import t2 from "../../assets/img/team/darrell.jpg";
 import t3 from "../../assets/img/team/Doug.png";
 import t4 from "../../assets/img/team/Frank.png";
+import t9 from "../../assets/img/team/Mohan.png";
+import t10 from "../../assets/img/team/Shane.png";
+import t2 from "../../assets/img/team/darrell.jpg";
 import t5 from "../../assets/img/team/jayy.png";
 import t6 from "../../assets/img/team/manish.png";
 import t7 from "../../assets/img/team/michael.jpg";
 import t8 from "../../assets/img/team/mike.jpg";
-import t9 from "../../assets/img/team/Mohan.png";
-import t10 from "../../assets/img/team/Shane.png";
-import t11 from "../../assets/img/team/shannon.png";
-import t12 from "../../assets/img/team/treyy.png";
-import Slider from "react-slick";
+import TeamCard from "../team";
 
 function SampleNextArrow(props) {
   const { className, onClick } = props;
@@ -74,24 +72,24 @@ const Team = () => {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 993,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          initialSlide: 1
-        }
+          initialSlide: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -133,7 +131,6 @@ const Team = () => {
           name="Mohan Anem"
           position="International Operations Advisor"
         />
-        
       </Slider>
 
       <a href="/team" className="team-btn">

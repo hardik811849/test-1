@@ -1,70 +1,70 @@
-import React from 'react'
-import { Col, Row } from 'react-bootstrap'
-import InnerBanner from '../innerBanner'
-import PageHeading from '../pageHeading'
-import inside from '../../assets/img/inside.png'
-import PrimaryBgHeading from '../primaryBgHeading'
-import svg1 from '../../assets/img/svg/svg1.svg'
-import svg2 from '../../assets/img/svg/svg2.svg'
-import svg3 from '../../assets/img/svg/svg3.svg'
-import svg4 from '../../assets/img/svg/svg4.svg'
-import svg5 from '../../assets/img/svg/svg5.svg'
-import svg6 from '../../assets/img/svg/svg6.svg'
-import svg7 from '../../assets/img/svg/svg7.svg'
-import svg8 from '../../assets/img/svg/svg8.svg'
-import svg9 from '../../assets/img/svg/svg9.svg'
-import IconBox from './IconBox'
-import Bottom from '../home/Bottom'
-import Loader from '../layout/loader'
-import esgBanner from '../../assets/img/greenHydroImages/esgBanner.png'
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import esgBanner from "../../assets/img/greenHydroImages/esgBanner.png";
+import inside from "../../assets/img/inside.png";
+import svg1 from "../../assets/img/svg/svg1.svg";
+import svg2 from "../../assets/img/svg/svg2.svg";
+import svg3 from "../../assets/img/svg/svg3.svg";
+import svg4 from "../../assets/img/svg/svg4.svg";
+import svg5 from "../../assets/img/svg/svg5.svg";
+import svg6 from "../../assets/img/svg/svg6.svg";
+import svg7 from "../../assets/img/svg/svg7.svg";
+import svg8 from "../../assets/img/svg/svg8.svg";
+import svg9 from "../../assets/img/svg/svg9.svg";
+import Bottom from "../home/Bottom";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
+import PageHeading from "../pageHeading";
+import PrimaryBgHeading from "../primaryBgHeading";
+import IconBox from "./IconBox";
 
 const ESG = () => {
   return (
     <>
       <Loader />
-      <InnerBanner title='ADVANCING RESPONSIBILITY' image={esgBanner} />
+      <InnerBanner title="ADVANCING RESPONSIBILITY" image={esgBanner} />
       <PageHeading
-        heading='We are very conscious of carbon emissions, climate, and cultural values and continue to address and execute effective environmental, social, and governance (ESG) criteria using modern technology to mitigate and decelerate said environmental effects, while minimizing its carbon and environmental footprint. '
-        align='text-start'
+        heading="We are very conscious of carbon emissions, climate, and cultural values and continue to address and execute effective environmental, social, and governance (ESG) criteria using modern technology to mitigate and decelerate said environmental effects, while minimizing its carbon and environmental footprint. "
+        align="text-start"
       />
 
-      <div className='about-owner'>
-        <div className='about-heading-wrap'>
-          <div className='about-heading'>
-            <div data-aos-duration='700' data-aos='fade-up'>
-              <p className='text-center'>
+      <div className="about-owner">
+        <div className="about-heading-wrap">
+          <div className="about-heading">
+            <div data-aos-duration="700" data-aos="fade-up">
+              <p className="text-center">
                 Expertise and Integrity - Our FOUNDERS & CEO
               </p>
             </div>
           </div>
         </div>
 
-        <section className='brief-section esgBrief'>
-          <Row className='g-0'>
-            <Col lg='6'>
+        <section className="brief-section esgBrief">
+          <Row className="g-0">
+            <Col lg="6">
               <div
-                data-aos-duration='700'
-                data-aos='fade-right'
-                className='h-100'
+                data-aos-duration="700"
+                data-aos="fade-right"
+                className="h-100"
               >
-                <div className='brief-content-wrap'>
-                  <h4 className='brief-text'>
+                <div className="brief-content-wrap">
+                  <h4 className="brief-text">
                     DELIVERING SUSTAINABLE SOLUTIONS
                   </h4>
-                  <a href='/' className='text-btn'>
-                    KNOW MORE{' '}
+                  <a href="/" className="text-btn">
+                    KNOW MORE{" "}
                     <svg
-                      width='22'
-                      height='12'
-                      viewBox='0 0 22 12'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
+                      width="22"
+                      height="12"
+                      viewBox="0 0 22 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d='M1 6H21M21 6L16.102 1M21 6L16.102 11'
-                        stroke='#77ABD2'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
+                        d="M1 6H21M21 6L16.102 1M21 6L16.102 11"
+                        stroke="#77ABD2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                     </svg>
                   </a>
@@ -72,20 +72,20 @@ const ESG = () => {
               </div>
             </Col>
 
-            <Col lg='6'>
-              <div data-aos-duration='700' data-aos='fade-left'>
-                <div className='img-wrap'>
-                  <img src={inside} alt='' className='brief-img' />
+            <Col lg="6">
+              <div data-aos-duration="700" data-aos="fade-left">
+                <div className="img-wrap">
+                  <img src={inside} alt="" className="brief-img" />
                 </div>
               </div>
             </Col>
           </Row>
         </section>
 
-        <div className='mission-wrap'>
-          <div className='mission-content'>
-            <div data-aos-duration='700' data-aos='fade-up'>
-              <p className='small-info-text'>
+        <div className="mission-wrap">
+          <div className="mission-content">
+            <div data-aos-duration="700" data-aos="fade-up">
+              <p className="small-info-text">
                 Hydrogen196 is proud to adhere to the highest clean air
                 standards, achieved through our sustainable practice of
                 recycling hydrogen by injecting it back into the system. By
@@ -394,18 +394,18 @@ const ESG = () => {
         </div>
       </div> */}
 
-      <div className='page-heading-wrap pt-0'>
-        <div data-aos-duration='700' data-aos='fade-up'>
-          <h4 className='page-heading'>MATERIAL ESG FACTORS</h4>
+      <div className="page-heading-wrap pt-0">
+        <div data-aos-duration="700" data-aos="fade-up">
+          <h4 className="page-heading">MATERIAL ESG FACTORS</h4>
         </div>
       </div>
 
-      <div data-aos-duration='700' data-aos='fade-up'>
-        <div className='mt-3 playbook-wrap'>
+      <div data-aos-duration="700" data-aos="fade-up">
+        <div className="mt-3 playbook-wrap">
           <Row>
-            <Col lg='3' className='d-none d-lg-block'></Col>
-            <Col lg='9'>
-              <p className='small-info-text'>
+            <Col lg="3" className="d-none d-lg-block"></Col>
+            <Col lg="9">
+              <p className="small-info-text">
                 Geothermal Core aims to create companies with a positive
                 environmental and social impact. However, we are largely focused
                 on performance in areas most material to each company. This
@@ -418,85 +418,85 @@ const ESG = () => {
         </div>
       </div>
 
-      <PrimaryBgHeading heading='Core AREAS OF ESG FOCUS' />
+      <PrimaryBgHeading heading="Core AREAS OF ESG FOCUS" />
 
-      <div className='focus-area'>
-        <Row className='gx-4 gy-5 justify-content-center'>
-          <Col xxl='2' lg='3' md='4' xs='6'>
-            <div data-aos-duration='700' data-aos='fade-up'>
-              <IconBox icon={svg1} name='Emissions / CO2 Avoidance' />
+      <div className="focus-area">
+        <Row className="gx-4 gy-5 justify-content-center">
+          <Col xxl="2" lg="3" md="4" xs="6">
+            <div data-aos-duration="700" data-aos="fade-up">
+              <IconBox icon={svg1} name="Emissions / CO2 Avoidance" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='200'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
-              <IconBox icon={svg2} name='Safety' />
+              <IconBox icon={svg2} name="Safety" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='300'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
-              <IconBox icon={svg3} name='Power Sources' />
+              <IconBox icon={svg3} name="Power Sources" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='400'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="400"
             >
-              <IconBox icon={svg4} name='Recruitment' />
+              <IconBox icon={svg4} name="Recruitment" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='500'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="500"
             >
-              <IconBox icon={svg5} name='Efficiency / Utilization' />
+              <IconBox icon={svg5} name="Efficiency / Utilization" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='600'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="600"
             >
-              <IconBox icon={svg6} name='Demographics and Engagement' />
+              <IconBox icon={svg6} name="Demographics and Engagement" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='700'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="700"
             >
-              <IconBox icon={svg7} name='Leak Detection' />
+              <IconBox icon={svg7} name="Leak Detection" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='800'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="800"
             >
-              <IconBox icon={svg8} name='Governance' />
+              <IconBox icon={svg8} name="Governance" />
             </div>
           </Col>
-          <Col xxl='2' lg='3' md='4' xs='6'>
+          <Col xxl="2" lg="3" md="4" xs="6">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='900'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="900"
             >
-              <IconBox icon={svg9} name='Cybersecurity' />
+              <IconBox icon={svg9} name="Cybersecurity" />
             </div>
           </Col>
         </Row>
@@ -504,7 +504,7 @@ const ESG = () => {
 
       <Bottom />
     </>
-  )
-}
+  );
+};
 
-export default ESG
+export default ESG;

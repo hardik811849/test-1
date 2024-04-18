@@ -1,122 +1,118 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 // import { Col, Row } from "react-bootstrap";
-import InnerBanner from '../innerBanner'
-import PageHeading from '../pageHeading'
-import Team from './team'
+import InnerBanner from "../innerBanner";
+import Team from "./team";
 
 // import Team from "../team";
 // import jay from "../../assets/img/team/jayy.png";
 // import andy from "../../assets/img/team/Andrew.png";
-import rightimage from '../../assets/img/AboutusImgOne.png'
-import bannerImage from '../../assets/img/Group 13218.png'
-import bottomgroup from '../../assets/img/aboutuslong.png'
-import bottomgrouprightone from '../../assets/img/AboutUsRightOne.png'
-import img1 from '../../assets/img/team/1.png'
-import Bottom from '../home/Bottom'
-import Loader from '../layout/loader'
-import Aos from 'aos'
+import Aos from "aos";
+import bottomgrouprightone from "../../assets/img/AboutUsRightOne.png";
+import rightimage from "../../assets/img/AboutusImgOne.png";
+import bannerImage from "../../assets/img/Group 13218.png";
+import Loader from "../layout/loader";
 
-import aboutBanner from '../../assets/img/greenHydroImages/inner-banner.png'
+import aboutBanner from "../../assets/img/greenHydroImages/inner-banner.png";
 
-const AboutUs = props => {
-  const [teamFilter, setTeamFilter] = useState(Team)
-  const [active, setActive] = useState(1)
+const AboutUs = (props) => {
+  const [teamFilter, setTeamFilter] = useState(Team);
+  const [active, setActive] = useState(1);
   useEffect(() => {
-    window.scrollTo(0, 0)
-    Aos.init()
-  }, [])
+    window.scrollTo(0, 0);
+    Aos.init();
+  }, []);
 
-  let filterTeam = []
+  let filterTeam = [];
 
-  const handleFilter = val => {
-    setActive(val)
-    setTeamFilter(Team)
-  }
+  const handleFilter = (val) => {
+    setActive(val);
+    setTeamFilter(Team);
+  };
 
-  const handleFilterFounder = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
-      if (res.designation === 'CTO' || res.designation === 'CEO') {
-        return res
+  const handleFilterFounder = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
+      if (res.designation === "CTO" || res.designation === "CEO") {
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
-  const handleFilterOperations = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
-      if (res.designation === 'Operations') {
-        return res
+  const handleFilterOperations = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
+      if (res.designation === "Operations") {
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
-  const handleFilterBusiness = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
-      if (res.designation === 'Business') {
-        return res
+  const handleFilterBusiness = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
+      if (res.designation === "Business") {
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
-  const handleFilterFinance = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
-      if (res.designation === 'Financial ' || res.designation === 'Finance') {
-        return res
+  const handleFilterFinance = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
+      if (res.designation === "Financial " || res.designation === "Finance") {
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
-  const handleFilterTech = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
+  const handleFilterTech = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
       if (
-        res.position === 'Chief Engineering Officer' ||
-        res.designation === 'CTO'
+        res.position === "Chief Engineering Officer" ||
+        res.designation === "CTO"
       ) {
-        return res
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
-  const handleFilterLegal = val => {
-    setActive(val)
-    filterTeam = Team.filter(res => {
-      if (res.position.includes('Legal')) {
-        return res
+  const handleFilterLegal = (val) => {
+    setActive(val);
+    filterTeam = Team.filter((res) => {
+      if (res.position.includes("Legal")) {
+        return res;
       }
-    })
-    setTeamFilter(filterTeam)
-  }
+    });
+    setTeamFilter(filterTeam);
+  };
 
   return (
     <>
       <Loader />
       <InnerBanner
-        data-aos-duration='700'
-        data-aos='fade-up'
-        data-aos-delay='1000'
-        title='About Us'
+        data-aos-duration="700"
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        title="About Us"
         image={aboutBanner}
       />
-      <div className='middle_section_aboutus'>
-        <div className='banner_section'>
-          <div className=''>
-            <div className='row position-relative'>
+      <div className="middle_section_aboutus">
+        <div className="banner_section">
+          <div className="">
+            <div className="row position-relative">
               <div
-                data-aos-duration='700'
-                data-aos='fade-up'
-                data-aos-delay='1000'
-                className='col-12'
+                data-aos-duration="700"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                className="col-12"
               >
-                <div className='banner_text'>
+                <div className="banner_text">
                   <h3>Our Mission</h3>
                   <p>
                     Our mission is to revolutionize Hydrogen production by
@@ -128,11 +124,11 @@ const AboutUs = props => {
                     for generations to come.
                   </p>
                 </div>
-                <div className='banner_Image_about'>
+                <div className="banner_Image_about">
                   <img
                     src={bannerImage}
-                    alt=''
-                    className='img-fluid w-100'
+                    alt=""
+                    className="img-fluid w-100"
                   ></img>
                 </div>
               </div>
@@ -140,15 +136,15 @@ const AboutUs = props => {
           </div>
         </div>
       </div>
-      <div className='container-fluid'>
-        <div className='bottom_text_section'>
-          <div className=''>
-            <div className='row'>
+      <div className="container-fluid">
+        <div className="bottom_text_section">
+          <div className="">
+            <div className="row">
               <div
-                data-aos-duration='700'
-                data-aos='fade-left'
-                data-aos-delay='1000'
-                className='col-lg-6 col-sm-12 col-12'
+                data-aos-duration="700"
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                className="col-lg-6 col-sm-12 col-12"
               >
                 <h3>
                   <br /> <br />
@@ -165,28 +161,28 @@ const AboutUs = props => {
                   solutions and reduce greenhouse gas emissions.
                 </p>
               </div>
-              <div className='col-lg-6 col-sm-12 col-12'>
+              <div className="col-lg-6 col-sm-12 col-12">
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-right'
-                  data-aos-delay='1000'
-                  className='img-about-us d-flex justify-content-end'
+                  data-aos-duration="700"
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                  className="img-about-us d-flex justify-content-end"
                 >
-                  <img src={bottomgrouprightone} alt='' className='w-75'></img>
+                  <img src={bottomgrouprightone} alt="" className="w-75"></img>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className=''>
-          <div className='bottom-section-about'>
-            <div className='about-us-mission'>
-              <div className='row'>
-                <div className='col-lg-6 col-sm-12 col-12 '>
+        <div className="">
+          <div className="bottom-section-about">
+            <div className="about-us-mission">
+              <div className="row">
+                <div className="col-lg-6 col-sm-12 col-12 ">
                   <div
-                    data-aos-duration='700'
-                    data-aos='fade-left'
-                    className='text_area_'
+                    data-aos-duration="700"
+                    data-aos="fade-left"
+                    className="text_area_"
                   >
                     <h3>
                       Hydrogen196's mission is centered around pioneering the
@@ -203,7 +199,7 @@ const AboutUs = props => {
                       aim to establish hydrogen as a leading, abundant, and
                       cost-effective source of clean power worldwide.
                     </p>
-                    <div className='bottom_section_p'>
+                    <div className="bottom_section_p">
                       <p>
                         At Hydrogen196, we're revolutionizing a sustainable
                         future.
@@ -212,127 +208,127 @@ const AboutUs = props => {
                   </div>
                 </div>
                 <div
-                  data-aos-duration='700'
-                  data-aos='fade-right'
-                  className='col-lg-6 col-sm-12 col-12 mt-3 mt-lg-0  d-flex justify-content-end'
+                  data-aos-duration="700"
+                  data-aos="fade-right"
+                  className="col-lg-6 col-sm-12 col-12 mt-3 mt-lg-0  d-flex justify-content-end"
                 >
-                  <img src={rightimage} alt='' className='w-75'></img>
+                  <img src={rightimage} alt="" className="w-75"></img>
                 </div>
               </div>
             </div>
-            <div className='row team-filter-head'>
-              <div className='col-md-12 col-lg-12'>
-                <div className='row'>
-                  <div className='col-lg-4 col-md-12 col-sm-12 col-12 '>
-                    <p className='p-1'>Our Team</p>
+            <div className="row team-filter-head">
+              <div className="col-md-12 col-lg-12">
+                <div className="row">
+                  <div className="col-lg-4 col-md-12 col-sm-12 col-12 ">
+                    <p className="p-1">Our Team</p>
                   </div>
-                  <div className='col-lg-8 col-md-12 col-sm-12 col-12 filter-team'>
-                    <div className='p-1'>
+                  <div className="col-lg-8 col-md-12 col-sm-12 col-12 filter-team">
+                    <div className="p-1">
                       <button
-                        onClick={active => handleFilter(1)}
+                        onClick={(active) => handleFilter(1)}
                         className={
                           active === 1
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        All{' '}
+                        {" "}
+                        All{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
-                        onClick={active => handleFilterFounder(2)}
+                        onClick={(active) => handleFilterFounder(2)}
                         className={
                           active === 2
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Founder{' '}
+                        {" "}
+                        Founder{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
                         onClick={() => handleFilterOperations(3)}
                         className={
                           active === 3
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Operations{' '}
+                        {" "}
+                        Operations{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
                         onClick={() => handleFilterBusiness(4)}
                         className={
                           active === 4
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Business{' '}
+                        {" "}
+                        Business{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
                         onClick={() => handleFilterFinance(5)}
                         className={
                           active === 5
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Finance{' '}
+                        {" "}
+                        Finance{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
                         onClick={() => handleFilterTech(6)}
                         className={
                           active === 6
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Technology{' '}
+                        {" "}
+                        Technology{" "}
                       </button>
                     </div>
-                    <div className='p-1'>
+                    <div className="p-1">
                       <button
                         onClick={() => handleFilterLegal(7)}
                         className={
                           active === 7
-                            ? 'btn btn-success  rounded-0'
-                            : 'btn btn-outline-success  rounded-0'
+                            ? "btn btn-success  rounded-0"
+                            : "btn btn-outline-success  rounded-0"
                         }
                       >
-                        {' '}
-                        Legal{' '}
+                        {" "}
+                        Legal{" "}
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col-md-12 col-lg-12 mt-2'>
-                <div className='row'>
-                  {teamFilter.map(item => (
-                    <div key={item.id} className='col-sm-2 col-12 col20_team'>
+              <div className="col-md-12 col-lg-12 mt-2">
+                <div className="row">
+                  {teamFilter.map((item) => (
+                    <div key={item.id} className="col-sm-2 col-12 col20_team">
                       <div
-                        data-aos-duration='700'
-                        data-aos='fade-up'
-                        data-aos-delay='1000'
-                        className='team_img'
+                        data-aos-duration="700"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                        className="team_img"
                       >
-                        <img src={item.img_path} className='img-fluid' />
-                        <div className='team_text'>
+                        <img src={item.img_path} className="img-fluid" />
+                        <div className="team_text">
                           <p>{item.name}</p>
                           <span>{item.position}</span>
                           {/* <div className="team_text_1">
@@ -348,7 +344,7 @@ const AboutUs = props => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

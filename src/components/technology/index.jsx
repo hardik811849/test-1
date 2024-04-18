@@ -1,19 +1,19 @@
-import React from 'react'
-import { Col, Row } from 'react-bootstrap'
-import InnerBanner from '../innerBanner'
-import PageHeading from '../pageHeading'
-import PrimaryBgHeading from '../primaryBgHeading'
-import TechnologyBox from '../technologyBox'
-import t1 from '../../assets/img/drysteam.png'
-import t3 from '../../assets/img/binary.png'
-import Loader from '../layout/loader'
-import techBanner from '../../assets/img/techBanner.png';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import t3 from "../../assets/img/binary.png";
+import t1 from "../../assets/img/drysteam.png";
+import techBanner from "../../assets/img/techBanner.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
+import PageHeading from "../pageHeading";
+import PrimaryBgHeading from "../primaryBgHeading";
+import TechnologyBox from "../technologyBox";
 
 const Technology = () => {
   return (
     <>
       <Loader />
-      <InnerBanner title="TECHNOLOGY" image={techBanner}/>
+      <InnerBanner title="TECHNOLOGY" image={techBanner} />
       <PageHeading
         heading="GEOTHERAML CORE USES MODERN STATE-OF-THE-ART ORGANIC RANKINE CYCLE (ORC) POWER PLANTS THAT CAN OPERATE FOR DECADES"
         align="text-start"
@@ -65,6 +65,6 @@ const Technology = () => {
       </div>
     </>
   );
-}
+};
 
-export default Technology
+export default Technology;

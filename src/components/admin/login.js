@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBInput,
   MDBCheckbox,
-  MDBIcon,
+  MDBCol,
+  MDBContainer,
+  MDBInput,
+  MDBRow,
 } from "mdb-react-ui-kit";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import authService from "../services/authService";
 

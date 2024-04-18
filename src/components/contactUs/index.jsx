@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import InnerBanner from "../innerBanner";
 // import ContactDetail from "./ContactDetail";
-import Loader from "../layout/loader";
-import contactBanner from "../../assets/img/greenHydroImages/contactusBanner.png";
-import { Col, FormControl, FormLabel, Row, Form } from "react-bootstrap";
+import { Col, FormControl, FormLabel, Row } from "react-bootstrap";
 import Swal from "sweetalert2";
+import contactBanner from "../../assets/img/greenHydroImages/contactusBanner.png";
+import Loader from "../layout/loader";
 import authService from "../services/authService";
 
 const ContactUs = () => {

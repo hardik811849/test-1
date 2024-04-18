@@ -1,5 +1,5 @@
-import React from 'react'
-import bg from '../../assets/img/card-bg.png'
+import React from "react";
+import bg from "../../assets/img/card-bg.png";
 
 const NumberCard = (props) => {
   return (
@@ -17,6 +17,6 @@ const NumberCard = (props) => {
       <p className="number-text text-center"> {props.title} </p>
     </div>
   );
-}
+};
 
-export default NumberCard
+export default NumberCard;

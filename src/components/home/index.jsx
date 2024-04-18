@@ -1,20 +1,19 @@
-import React, { useEffect } from 'react'
-import Loader from '../layout/loader'
-import About from './About'
-import Banner from './Banner'
-import Bottom from './Bottom'
-import Brief from './Brief'
-import Info from './Info'
-import Insights from './Insights'
-import Numbers from './Numbers'
-import Plants from './Plants'
-import Team from './Team'
-import Aos from 'aos';
+import Aos from "aos";
+import React, { useEffect } from "react";
+import Loader from "../layout/loader";
+import About from "./About";
+import Banner from "./Banner";
+import Brief from "./Brief";
+import Info from "./Info";
+import Insights from "./Insights";
+import Numbers from "./Numbers";
+import Plants from "./Plants";
+import Team from "./Team";
 
 const Home = () => {
   useEffect(() => {
     Aos.init();
-  }, [])
+  }, []);
 
   return (
     <>
@@ -40,6 +39,6 @@ const Home = () => {
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

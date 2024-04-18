@@ -1,19 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
-const ContactDetail = props => {
+const ContactDetail = (props) => {
   return (
-    <div className='contact-info'>
+    <div className="contact-info">
       <p className="contact-info-title">{props.title}</p>
       <p className={`contact-detail ${props.displayDetail}`}>{props.detail}</p>
-      <a href={`mailto:${props.link}`} className={`contact-link ${props.display}`}>{props.link}</a>
+      <a
+        href={`mailto:${props.link}`}
+        className={`contact-link ${props.display}`}
+      >
+        {props.link}
+      </a>
     </div>
-  )
-}
+  );
+};
 
 ContactDetail.defaultProps = {
-    display: "d-none",
-    displayDetail: "d-block"
-}
+  display: "d-none",
+  displayDetail: "d-block",
+};
 
-export default ContactDetail
+export default ContactDetail;

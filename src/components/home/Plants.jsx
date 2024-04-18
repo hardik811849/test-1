@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import binary from "../../assets/img/binaryplant.png";
+import dry from "../../assets/img/dryplant.png";
 import PlantSlide from "../plantSlide";
-import dry from '../../assets/img/dryplant.png';
-import flash from '../../assets/img/flashsteam.png'
-import binary from '../../assets/img/binaryplant.png'
 
 function SampleNextArrow(props) {
   const { className, onClick } = props;

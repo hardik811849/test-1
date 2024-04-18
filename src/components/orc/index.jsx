@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
-import { Col, Row } from "react-bootstrap";
-import InnerBanner from "../innerBanner";
-import PageHeading from "../pageHeading";
-import PrimaryBgHeading from "../primaryBgHeading";
-import TechnologyBox from "../technologyBox";
-import t1 from "../../assets/img/drysteam.png";
-import t3 from "../../assets/img/binary.png";
-import Loader from "../layout/loader";
-import techBanner from "../../assets/img/orcBanner.png";
-import rightBanner from "../../assets/img/homePageMiddleLeft.png";
-import leftBanner from "../../assets/img/orcTech.png";
 import { useNavigate } from "react-router-dom";
+import rightBanner from "../../assets/img/homePageMiddleLeft.png";
+import techBanner from "../../assets/img/orcBanner.png";
+import leftBanner from "../../assets/img/orcTech.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
 
 const Orc = () => {
   const navigate = useNavigate();

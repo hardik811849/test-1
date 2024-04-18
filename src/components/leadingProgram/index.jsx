@@ -1,34 +1,34 @@
-import React from 'react'
-import Devider from '../devider'
-import InnerBanner from '../innerBanner'
-import Loader from '../layout/loader'
-import PageHeading from '../pageHeading'
-import PrimaryBgHeading from '../primaryBgHeading'
-import jay from '../../assets/img/team/jayy.png'
-import andrew from '../../assets/img/team/Andrew.png'
-import Bottom from '../home/Bottom'
+import React from "react";
+import andrew from "../../assets/img/team/Andrew.png";
+import jay from "../../assets/img/team/jayy.png";
+import Devider from "../devider";
+import Bottom from "../home/Bottom";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
+import PageHeading from "../pageHeading";
+import PrimaryBgHeading from "../primaryBgHeading";
 
 const LeadingProgram = () => {
   return (
     <>
       <Loader />
-      <InnerBanner title='LEADING PROGRAM' />
+      <InnerBanner title="LEADING PROGRAM" />
       <PageHeading
-        heading='OUR FULL IMMERSION APPROACH EXTENDS OUR INVESTMENT EXPERTISE TO THE'
-        align='text-start'
-        text='development of our team'
+        heading="OUR FULL IMMERSION APPROACH EXTENDS OUR INVESTMENT EXPERTISE TO THE"
+        align="text-start"
+        text="development of our team"
       />
 
       <Devider />
 
-      <div className='leader-content'>
-        <div data-aos-duration='700' data-aos='fade-up'>
-          <h5 className='leader-heading'>
+      <div className="leader-content">
+        <div data-aos-duration="700" data-aos="fade-up">
+          <h5 className="leader-heading">
             FOSTERING THE GROWTH INFRASTRUCTURE TALENT OF TOMORROW
           </h5>
         </div>
-        <div data-aos-duration='700' data-aos='fade-up' data-aos-delay='200'>
-          <p className='leader-text'>
+        <div data-aos-duration="700" data-aos="fade-up" data-aos-delay="200">
+          <p className="leader-text">
             Developed in 2023, the Hydrogen196 Leadership Program reflects our
             ethos of recruiting, mentoring, and training our junior investment
             team members to facilitate the next generation of energy investors.
@@ -42,15 +42,15 @@ const LeadingProgram = () => {
         </div>
       </div>
 
-      <PrimaryBgHeading heading='Core AREAS OF ESG FOCUS' />
+      <PrimaryBgHeading heading="Core AREAS OF ESG FOCUS" />
 
-      <div className='leader-wrap'>
-        <div data-aos-duration='700' data-aos='fade-up'>
-          <div className='leader-card'>
-            <img src={jay} alt='' className='leader-img' />
+      <div className="leader-wrap">
+        <div data-aos-duration="700" data-aos="fade-up">
+          <div className="leader-card">
+            <img src={jay} alt="" className="leader-img" />
 
-            <div className='leader-content-wrap'>
-              <p className='leader-para'>
+            <div className="leader-content-wrap">
+              <p className="leader-para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget
                 gravida cum sociis natoque penatibus et magnis dis parturient.
@@ -69,16 +69,16 @@ const LeadingProgram = () => {
                 vivamus arcu felis.
               </p>
 
-              <h5 className='leader-name'>Dr. Jay Patel</h5>
-              <p className='leader-position'>CEO</p>
+              <h5 className="leader-name">Dr. Jay Patel</h5>
+              <p className="leader-position">CEO</p>
             </div>
           </div>
         </div>
 
-        <div data-aos-duration='700' data-aos='fade-up'>
-          <div className='leader-card'>
-            <div className='leader-content-wrap'>
-              <p className='leader-para'>
+        <div data-aos-duration="700" data-aos="fade-up">
+          <div className="leader-card">
+            <div className="leader-content-wrap">
+              <p className="leader-para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget
                 gravida cum sociis natoque penatibus et magnis dis parturient.
@@ -97,18 +97,18 @@ const LeadingProgram = () => {
                 vivamus arcu felis.
               </p>
 
-              <h5 className='leader-name'>Dr. Andrew Davidoff</h5>
-              <p className='leader-position'>FOUNDER & CTO</p>
+              <h5 className="leader-name">Dr. Andrew Davidoff</h5>
+              <p className="leader-position">FOUNDER & CTO</p>
             </div>
 
-            <img src={andrew} alt='' className='leader-img' />
+            <img src={andrew} alt="" className="leader-img" />
           </div>
         </div>
       </div>
 
       <Bottom />
     </>
-  )
-}
+  );
+};
 
-export default LeadingProgram
+export default LeadingProgram;

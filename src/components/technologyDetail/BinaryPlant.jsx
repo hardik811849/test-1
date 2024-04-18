@@ -1,19 +1,18 @@
 import React from "react";
-import InnerBanner from "../innerBanner";
-import PageHeading from "../pageHeading";
-import img from "../../assets/img/binaryplant.png";
 import { Col, Row } from "react-bootstrap";
-import DetailBottomBanner from "./DetailBottomBanner";
+import img from "../../assets/img/binaryplant.png";
+import scicatBanner from "../../assets/img/greenHydroImages/inner-banner.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
+import PageHeading from "../pageHeading";
 import TechnologyBox from "../technologyBox";
-import Bottom from "../home/Bottom";
-import Loader from "../layout/loader"; 
-import scicatBanner from '../../assets/img/greenHydroImages/inner-banner.png';
+import DetailBottomBanner from "./DetailBottomBanner";
 
 const BinaryPlant = () => {
   return (
     <>
       <Loader />
-      <InnerBanner title="SciCat® TECHNOLOGY" image={scicatBanner}/>
+      <InnerBanner title="SciCat® TECHNOLOGY" image={scicatBanner} />
       <PageHeading
         heading="SCICAT REPRESENTS PROPRIETARY AND AWARD-WINNING 3-D SEISMIC TECHNOLOGY FOR ENHANCED GEOTHERMAL SYSTEMS AND MAXIMUM PRODUCTION"
         align="text-start"
@@ -24,7 +23,10 @@ const BinaryPlant = () => {
           <Col xxl="6">
             <div data-aos-duration="700" data-aos="fade-up">
               <p className="detail-info-text">
-              SciCat® represents seismic driven proprietary technology that measures in-situ 3-D minimum stress which is the key rock parameter that governs drilling, fracture stimulation, and permeability of geothermal rock formations.
+                SciCat® represents seismic driven proprietary technology that
+                measures in-situ 3-D minimum stress which is the key rock
+                parameter that governs drilling, fracture stimulation, and
+                permeability of geothermal rock formations.
               </p>
             </div>
           </Col>
@@ -47,7 +49,10 @@ const BinaryPlant = () => {
           <Col>
             <div data-aos-duration="700" data-aos="fade-up">
               <p className="detail-info-text">
-              Changes in fractured rock define permeability and geothermal reservoir extent, which drives reservoir performance and ultimately the production of geothermal energy for optimal electricity generation and maximum cash flows.
+                Changes in fractured rock define permeability and geothermal
+                reservoir extent, which drives reservoir performance and
+                ultimately the production of geothermal energy for optimal
+                electricity generation and maximum cash flows.
               </p>
             </div>
           </Col>
@@ -64,9 +69,8 @@ const BinaryPlant = () => {
           />
         }
       />
-
     </>
   );
-}
+};
 
-export default BinaryPlant
+export default BinaryPlant;

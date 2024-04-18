@@ -1,20 +1,17 @@
-import InnerBanner from "../innerBanner";
-import Loader from "../layout/loader";
-import PageHeading from "../pageHeading";
-import portfolioBanner from "../../assets/img/projectBanner.png";
-import project from "../../assets/img/project.png";
-import projectMap from "../../assets/img/projectMap.png";
-import GoogleMap from "./googleMap";
-import louisiana from "../../assets/img/louisiana.png";
-import texas from "../../assets/img/texas.png";
-import egypt from "../../assets/img/egypt.png";
-import iraq from "../../assets/img/iraq.png";
 import carribbean from "../../assets/img/carribbean.png";
-import hungry from "../../assets/img/hungry.png";
-import ladakh from "../../assets/img/ladakh.png";
+import egypt from "../../assets/img/egypt.png";
 import himachal from "../../assets/img/himachal.png";
+import hungry from "../../assets/img/hungry.png";
+import iraq from "../../assets/img/iraq.png";
+import ladakh from "../../assets/img/ladakh.png";
+import louisiana from "../../assets/img/louisiana.png";
+import portfolioBanner from "../../assets/img/projectBanner.png";
+import projectMap from "../../assets/img/projectMap.png";
+import texas from "../../assets/img/texas.png";
 import uk from "../../assets/img/uk.png";
 import up from "../../assets/img/up.png";
+import InnerBanner from "../innerBanner";
+import Loader from "../layout/loader";
 
 const OurPortFolio = () => {
   return (

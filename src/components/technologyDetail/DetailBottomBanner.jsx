@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
-import { Col, Row } from 'react-bootstrap'
-import Aos from 'aos'
+import Aos from "aos";
+import React, { useEffect } from "react";
+import { Col, Row } from "react-bootstrap";
 
-const DetailBottomBanner = props => {
+const DetailBottomBanner = (props) => {
   useEffect(() => {
     Aos.init();
-  }, [])
+  }, []);
 
   return (
     <div className="detail-bottom-banner">
@@ -38,6 +38,6 @@ const DetailBottomBanner = props => {
       </Row>
     </div>
   );
-}
+};
 
-export default DetailBottomBanner
+export default DetailBottomBanner;

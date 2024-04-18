@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { formatDate } from "./commonUtil";
-import { Link } from "react-router-dom";
-import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import ReactQuill from "react-quill";
 import Form from "react-bootstrap/Form";
-import Swal from "sweetalert2";
+import Modal from "react-bootstrap/Modal";
+import Table from "react-bootstrap/Table";
+import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import LeftNav from "../leftNav";
-import EventDetails from "./eventDetails";
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import authService from "../../services/authService";
+import LeftNav from "../leftNav";
+import { formatDate } from "./commonUtil";
+import EventDetails from "./eventDetails";
 
 function MyVerticallyCenteredModal(props) {
   const [data, setData] = useState(),

@@ -27,4 +27,4 @@ const formatDate = () => {
   return moment().format("DD MMM YY, h:mm a");
 };
 
-export { uploadFile, formatDate };
+export { formatDate, uploadFile };

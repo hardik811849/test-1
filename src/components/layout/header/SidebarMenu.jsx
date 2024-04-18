@@ -1,10 +1,7 @@
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 const SidebarMenu = () => {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="sidebar-menu">
@@ -69,6 +66,6 @@ const SidebarMenu = () => {
       </div>
     </div>
   );
-}
+};
 
-export default SidebarMenu
+export default SidebarMenu;

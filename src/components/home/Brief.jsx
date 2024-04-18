@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import inside from '../../assets/img/inside.png'
+import inside from "../../assets/img/inside.png";
 
 const Brief = () => {
   return (

@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
 import Aos from "aos";
+import React, { useEffect } from "react";
 
 const PrimaryBgHeading = (props) => {
   useEffect(() => {
     Aos.init();
   }, {});
-  
+
   return (
     <div className="primary-bg-heading">
       <div data-aos-duration="700" data-aos="fade-up">

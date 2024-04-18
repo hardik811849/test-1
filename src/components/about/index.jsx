@@ -1,33 +1,33 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 // import { Col, Row } from "react-bootstrap";
-import InnerBanner from '../innerBanner'
-import PageHeading from '../pageHeading'
+import InnerBanner from "../innerBanner";
+import PageHeading from "../pageHeading";
 
 // import Team from "../team";
 // import jay from "../../assets/img/team/jayy.png";
 // import andy from "../../assets/img/team/Andrew.png";
-import inside from '../../assets/img/inside.png'
-import Bottom from '../home/Bottom'
-import Loader from '../layout/loader'
-import Aos from 'aos'
+import Aos from "aos";
+import inside from "../../assets/img/inside.png";
+import Bottom from "../home/Bottom";
+import Loader from "../layout/loader";
 
-import aboutBanner from '../../assets/img/greenHydroImages/inner-banner.png'
+import aboutBanner from "../../assets/img/greenHydroImages/inner-banner.png";
 
 const About = () => {
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init();
+  }, []);
   return (
     <>
       <Loader />
-      <InnerBanner title='About Us' image={aboutBanner} />
+      <InnerBanner title="About Us" image={aboutBanner} />
       <PageHeading heading="Our mission is to spearhead a transformation towards a resilient and sustainable energy landscape by unlocking hydrogen's true potential.​​" />
 
-      <div className='about-owner'>
-        <div className='about-heading-wrap'>
-          <div className='about-heading'>
-            <div data-aos-duration='500' data-aos='fade-up'>
-              <p className='text-center'>Expertise and Integrity</p>
+      <div className="about-owner">
+        <div className="about-heading-wrap">
+          <div className="about-heading">
+            <div data-aos-duration="500" data-aos="fade-up">
+              <p className="text-center">Expertise and Integrity</p>
             </div>
           </div>
         </div>
@@ -69,14 +69,14 @@ const About = () => {
           </Row>
         </div> */}
 
-        <div className='mission-wrap'>
-          <div className='mission-content'>
+        <div className="mission-wrap">
+          <div className="mission-content">
             <div
-              data-aos-duration='700'
-              data-aos='fade-up'
-              data-aos-delay='1000'
+              data-aos-duration="700"
+              data-aos="fade-up"
+              data-aos-delay="1000"
             >
-              <p className='mission'>
+              <p className="mission">
                 Combined with recent technological advances in heat exchangers,
                 turbines, and generators, hydrogen energy-based electricity has
                 become a desirable and competitive renewable alternative that’s
@@ -84,7 +84,7 @@ const About = () => {
                 and responsibly produce hydrogen energy and electricity.
               </p>
 
-              <p className='mission mt-3'>
+              <p className="mission mt-3">
                 Our mission is to spearhead a transformation towards a resilient
                 and sustainable energy landscape by unlocking hydrogen's true
                 potential.​
@@ -94,29 +94,29 @@ const About = () => {
         </div>
       </div>
 
-      <div className='about-inner-section'>
-        <div data-aos-duration='700' data-aos='fade-up' data-aos-delay='1000'>
-          <h4 className='inner-about-title'>
+      <div className="about-inner-section">
+        <div data-aos-duration="700" data-aos="fade-up" data-aos-delay="1000">
+          <h4 className="inner-about-title">
             SMALLEST SURFACE FOOTPRINT OF ANY POWER SOURCE PER MW INSTALLED
             CAPACITY
           </h4>
         </div>
 
-        <div data-aos-duration='700' data-aos='fade-up' data-aos-delay='1000'>
-          <div className='about-info-wrap'>
-            <div className='earth-img'>
-              <img src={inside} alt='' />
+        <div data-aos-duration="700" data-aos="fade-up" data-aos-delay="1000">
+          <div className="about-info-wrap">
+            <div className="earth-img">
+              <img src={inside} alt="" />
             </div>
 
-            <div className='about-info-content'>
-              <p className='highlight-text'>
+            <div className="about-info-content">
+              <p className="highlight-text">
                 At Hydrogen196, our mission is to deliver a sustainable and
                 emissions-free energy solution that offers affordable and
                 reliable low-cost dispatchable baseload power to a wide range of
                 sectors.
               </p>
 
-              <p className='desc-text'>
+              <p className="desc-text">
                 From power providers and heavy industry to data centers, housing
                 developments, and commercial applications, both on and off the
                 grid, our hydrogen-based solutions aim to transform the energy
@@ -136,7 +136,7 @@ const About = () => {
 
       <Bottom />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

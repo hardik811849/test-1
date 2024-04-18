@@ -1,10 +1,5 @@
 import React from "react";
-import video from "../../assets/video/Geothermalcore.mp4";
-import logo from "../../assets/img/logo-lg.png";
-import BannerVideo from "../home/BannerVideo";
-import ReactPlayer from "react-player";
 import { Button } from "react-bootstrap";
-import { useNavigation } from "react-router-dom";
 
 const BannerContatctUs = (props) => {
   // const navigate = useNavigation()

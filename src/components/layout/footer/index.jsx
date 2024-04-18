@@ -1,57 +1,55 @@
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope, faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import logo from '../../../assets/img/greenHydroImages/logo_white_text.svg'
-import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
-import authService from '../../services/authService'
-import Swal from 'sweetalert2'
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import logo from "../../../assets/img/greenHydroImages/logo_white_text.svg";
+import authService from "../../services/authService";
 
 const Footer = () => {
-  const navigate = useNavigate()
-  const [email, setEmail] = useState()
+  const navigate = useNavigate();
+  const [email, setEmail] = useState();
 
-  const handleChange = e => {
-    e.preventDefault()
-    setEmail(e.target.value)
-  }
+  const handleChange = (e) => {
+    e.preventDefault();
+    setEmail(e.target.value);
+  };
 
   const handleSubmit = () => {
     const data = {
       email: email,
-      status: true
-    }
-    authService.addNewsLetter(data).then(res => {
-      console.log(res.data)
-      if (res.data.messageCode === '200') {
+      status: true,
+    };
+    authService.addNewsLetter(data).then((res) => {
+      console.log(res.data);
+      if (res.data.messageCode === "200") {
         return Swal.fire({
-          icon: 'success',
-          title: 'success',
-          text: 'Email Added Successfully!'
-        })
+          icon: "success",
+          title: "success",
+          text: "Email Added Successfully!",
+        });
       }
-      if (res.data.messageCode === '409') {
+      if (res.data.messageCode === "409") {
         return Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: `${res.data.content}`
-        })
+          icon: "error",
+          title: "Error",
+          text: `${res.data.content}`,
+        });
       }
-      if (res.data.messageCode === '400') {
+      if (res.data.messageCode === "400") {
         return Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Some error occured. Please try again leter.'
-        })
+          icon: "error",
+          title: "Error",
+          text: "Some error occured. Please try again leter.",
+        });
       }
-    })
-  }
+    });
+  };
 
   return (
-    <div className='footer-wrap'>
-      <div className='footer-top d-md-flex align-items-center'>
+    <div className="footer-wrap">
+      <div className="footer-top d-md-flex align-items-center">
         {/* <a href="/" className="footer-logo">
   
             <img src={logo} alt="" />
@@ -94,15 +92,15 @@ const Footer = () => {
   
           </div> */}
 
-        <div className='row footerLink'>
-          <div className='col-xl-3 col-md-4 col-sm-12 col-12'>
-            <div className='footer-image'>
-              <a href='/' className='footer-logo'>
-                <img src={logo} alt='' />
+        <div className="row footerLink">
+          <div className="col-xl-3 col-md-4 col-sm-12 col-12">
+            <div className="footer-image">
+              <a href="/" className="footer-logo">
+                <img src={logo} alt="" />
               </a>
             </div>
 
-            <div className='footer-text'>
+            <div className="footer-text">
               <p>
                 A trusted hydrogen energy company, offering full-cycle
                 operations and delivering large-scale baseload power solutions
@@ -111,18 +109,18 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='col-xl-2 col-md-3 col-sm-12 col-12'>
-            <div className='header-name'>
+          <div className="col-xl-2 col-md-3 col-sm-12 col-12">
+            <div className="header-name">
               <p>Company</p>
             </div>
 
-            <div className='body-name'>
+            <div className="body-name">
               <p>
-                <a href='/about-us'>About us</a>
+                <a href="/about-us">About us</a>
               </p>
 
               <p>
-                <a href='/advancing'>ESG</a>
+                <a href="/advancing">ESG</a>
               </p>
 
               {/* <p>
@@ -130,7 +128,7 @@ const Footer = () => {
               </p> */}
 
               <p>
-                <a href='/advantages'>Competitive Advantage</a>
+                <a href="/advantages">Competitive Advantage</a>
               </p>
             </div>
           </div>
@@ -151,29 +149,29 @@ const Footer = () => {
             </div>
           </div> */}
 
-          <div className='col-xl-2 col-md-2 col-sm-12 col-12'>
-            <div className='header-name'>
+          <div className="col-xl-2 col-md-2 col-sm-12 col-12">
+            <div className="header-name">
               <p>Other</p>
             </div>
 
-            <div className='body-name'>
+            <div className="body-name">
               <p>
                 <a
-                  className='cursor-pointer'
-                  onClick={() => navigate('contact/us')}
+                  className="cursor-pointer"
+                  onClick={() => navigate("contact/us")}
                 >
                   Contact Us
                 </a>
               </p>
 
               <p>
-                <a href='/investor'>Investor</a>
+                <a href="/investor">Investor</a>
               </p>
 
               <p>
                 <a
-                  className='cursor-pointer'
-                  onClick={() => navigate('insights')}
+                  className="cursor-pointer"
+                  onClick={() => navigate("insights")}
                 >
                   News & insights
                 </a>
@@ -181,23 +179,23 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='col-xl-3 col-md-12 col-sm-12 col-12'>
-            <div className='header-name'>
+          <div className="col-xl-3 col-md-12 col-sm-12 col-12">
+            <div className="header-name">
               <p>Newsletter</p>
             </div>
 
             <div>
-              <div className='search-box'>
+              <div className="search-box">
                 <input
-                  onChange={e => handleChange(e)}
+                  onChange={(e) => handleChange(e)}
                   value={email}
-                  type='text'
-                  placeholder='Email address'
+                  type="text"
+                  placeholder="Email address"
                 />
-                <div className='align-self-center'>
-                  <button onClick={() => handleSubmit()} type='submit'>
-                    {' '}
-                    <FontAwesomeIcon icon={faArrowRight} />{' '}
+                <div className="align-self-center">
+                  <button onClick={() => handleSubmit()} type="submit">
+                    {" "}
+                    <FontAwesomeIcon icon={faArrowRight} />{" "}
                   </button>
                 </div>
               </div>
@@ -206,43 +204,43 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='footer-bottom'>
-        <div className='d-md-flex align-items-center justify-content-between'>
-          <p className='copyright'>© 2023 Hydrogen196. All Rights Reserved.</p>
+      <div className="footer-bottom">
+        <div className="d-md-flex align-items-center justify-content-between">
+          <p className="copyright">© 2023 Hydrogen196. All Rights Reserved.</p>
 
-          <div className='social-wrap'>
-            <a href='/terms-of-use' className='footer-link'>
+          <div className="social-wrap">
+            <a href="/terms-of-use" className="footer-link">
               Terms of use
             </a>
 
-            <a href='/legal-disclaimer' className='footer-link'>
+            <a href="/legal-disclaimer" className="footer-link">
               Legal Disclaimer
             </a>
 
-            <a href='/privacy-policy' className='footer-link'>
+            <a href="/privacy-policy" className="footer-link">
               Privacy Policy
             </a>
 
-            <a href='/cookie-policy' className='footer-link'>
+            <a href="/cookie-policy" className="footer-link">
               Cookie Policy
             </a>
 
-            <a href='mailto:jay@hydrogen196.com' className='social-link'>
-              {' '}
-              <FontAwesomeIcon icon={faEnvelope} />{' '}
+            <a href="mailto:jay@hydrogen196.com" className="social-link">
+              {" "}
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
             </a>
 
-            <a href='' target='_blank' className='social-link'>
-              {' '}
-              <FontAwesomeIcon icon={faLinkedinIn} />{' '}
+            <a href="" target="_blank" className="social-link">
+              {" "}
+              <FontAwesomeIcon icon={faLinkedinIn} />{" "}
             </a>
           </div>
         </div>
       </div>
 
-      <div className='footer2'>
-        <div className='wrap'>
-          <div className='box_1'>
+      <div className="footer2">
+        <div className="wrap">
+          <div className="box_1">
             <h3>
               “In the boundless realm of hydrogen energy, we embrace the gift of
               nature's elemental abundance, fueling a sustainable legacy for
@@ -252,7 +250,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
